@@ -1,0 +1,31 @@
+package binarytooctal;
+
+import java.util.Scanner;
+
+
+public class Binarytooctal {
+
+    public static void main(String[] args)
+    {
+        //you can apply many way to the convesation
+        //here i'm showing a easy one,
+        //but remember if u be a real coder then the way u think and the way I think may be different
+        
+        Scanner input=new Scanner(System.in);
+        
+        String binary = input.nextLine();   //hence i'm getting a binary input as string, here u just put a binary number
+        
+        int a=Integer.parseInt(binary, 2); //it will show u the equivalent decimal value as u put the binary number
+        
+        
+        //now u can easily convert decimal to octal by deviding the decimal by 8 with a loop
+        
+         
+        //also u can use java packages
+        
+        System.out.println(Integer.toOctalString(a));
+        
+        
+    }
+    
+}
